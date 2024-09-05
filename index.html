@@ -7,10 +7,29 @@
     <meta name = "author" content = "ijse" >
     <meta name = "viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "icon" type="image/x-icon" href="">
+    <link rel="style sheet" href="assets/styles/normalize.css">
     <title>Portfolio - Kaveesha Rukshan</title>
-    <style>
 
-    </style>
+    <!--google font ubernist-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!--font Vazirmatn-->
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+
+    <!--Yantramanav-->
+    <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!--css styles for pages-->
+    <link rel="stylesheet" href="assets/styles/page-css/home.css">
+    <link rel="stylesheet" href="assets/styles/page-css/aboutme.css">
+    <link rel="stylesheet" href="assets/styles/page-css/footer.css">
+    <link rel="stylesheet" href="assets/styles/page-css/services.css">
+
+<style>
+
+</style>
 </head>
 <body>
 <header>
@@ -31,74 +50,83 @@
 
 
 <!--home page-->
-<main>
-    <!--name section-->
-    <section>
-        <h5>hello</h5>
-        <h3>I'm Rukshan</h3>
-        <h3>Software Developer</h3>
-        <h3>UI/UX Designer</h3>
-    </section>
+<main class="home-page">
+<!--    &lt;!&ndash;name section&ndash;&gt;-->
+<!--    <section>-->
+<!--        <h5>hello</h5>-->
+<!--        <h3>I'm Rukshan</h3>-->
+<!--        <h3>Software Developer</h3>-->
+<!--        <h3>UI/UX Designer</h3>-->
+<!--    </section>-->
 
     <!--image section-->
-    <section>
-        <img src="assets/images/big-circle.png" title="" alt="">
-        <img src="assets/images/my-image-01.png" title="Rukshan" alt="image">
-        <img src="assets/images/clouds-for-image-end.png" title="" alt="">
-    </section>
+    <div id="home-page-images">
+        <img id="home-page-half-circle" src="assets/images/big-circle.png" title="" alt="">
+        <img id="home-page-rukshanimage" src="assets/images/my-image-01.png" title="Rukshan" alt="image">
+        <img id="home-page-clouds" src="assets/images/clouds-for-image-end.png" title="" alt="">
+    </div>
 </main>
-
 
 
 <!--about me page-->
-<main>
-    <!--topic section-->
-    <section>
-        <h3>About me</h3> <br>
-        <h6>Who am I?</h6>
+<main class="about-me-page">
+
+    <!--main content section-->
+    <section class="about-main-content-section">
+
+        <!--topic section-->
+        <section class="about-topic-section">
+            <label>About me</label><br>
+            <label>Who am I?</label>
+        </section>
+
+        <section class="about-content-section">
+            <label id="about-name">
+                I'm <br>
+                Kaveesha Rukshan
+            </label>
+
+            <!--my photo-->
+            <img id="about-rukshan-img" src="assets/images/my-image-02.png" title="Rukshan" alt="image">
+
+            <p>
+                I am currently pursuing a Diploma in Software Engineering.
+                With a strong passion for technology and problem-solving,
+                I am eager to apply my skills and knowledge to real-world
+                projects and contribute to innovative solutions.
+            </p>
+
+            <!--social media-->
+            <section class="about-social-section">
+                <img src="assets/images/linkedIn-logo.png" title="linkedIn profile" alt="linkedin logo">
+                <img src="assets/images/github-logo.png" title="github profile" alt="github logo">
+                <img src="assets/images/facebook-logo.png" title="facebook profile" alt="facebook logo">
+                <img src="assets/images/whatsapp-logo.png" title="whatsapp messenger" alt="whatsapp logo">
+            </section>
+
+            <!--two buttons-->
+            <section class="about-buttons">
+                <button id="about-cv-button">Download CV
+                    <img src="assets/images/cv-button-pic.png">
+                </button>
+                <button id="about-hire-me-button">Hire me</button>
+            </section>
+        </section>
     </section>
-
-    <section>
-        <div>I'm</div>
-        <div>Kaveesha Rukshan</div>
-        <p>
-            I am currently pursuing a Diploma in Software Engineering.
-            With a strong passion for technology and problem-solving,
-            I am eager to apply my skills and knowledge to real-world
-            projects and contribute to innovative solutions.
-        </p>
-
-        <!--social media-->
-        <div>
-            <img src="assets/images/linkedIn-logo.png" title="linkedIn profile" alt="linkedin logo">
-            <img src="assets/images/gitHub-logo.png" title="github profile" alt="github logo">
-            <img src="assets/images/facebook-logo.png" title="facebook profile" alt="facebook logo">
-            <img src="assets/images/whatsapp-logo.png" title="whatsapp messenger" alt="whatsapp logo">
-        </div>
-
-        <!--two buttons-->
-        <div>
-            <button>Download CV</button>
-            <button>Hire me</button>
-        </div>
-    </section>
-
-    <!--my photo-->
-    <img src="assets/images/my-image-02.png" title="Rukshan" alt="image">
 </main>
 
 
-
 <!--services page-->
-<main>
+<main class="service-page">
+
     <!--topic section-->
-    <section>
-        <h3>Services</h3> <br>
-        <h6>Professional Offerings</h6>
+    <section class="service-topic-section">
+        <label>Services</label> <br>
+        <label>Professional Offerings</label>
     </section>
 
     <!--Services section-->
-    <section>
+    <section class="services-section">
         <!--Service-01-->
         <div>
             <img src="assets/images/web-dev.png" title="web development" alt="png"> <br>
@@ -110,21 +138,21 @@
         <div>
             <img src="assets/images/mobile-app-dev.png" title="mobile app development" alt="png"> <br>
             <div>Mobile App Development</div> <br>
-            <p>We create responsive, user-friendly web sites with stunning designs and robust systems to meet your business needs.</p>
+            <p>Delivering high-quality, user-friendly mobile apps with impressive designs and robust functionality tailored to your business.</p>
         </div>
 
         <!--Service-03-->
         <div>
             <img src="assets/images/ui-ux-design.png" title="UI/UX Design" alt="png"> <br>
             <div>UI/UX Design</div> <br>
-            <p>We create responsive, user-friendly web sites with stunning designs and robust systems to meet your business needs.</p>
+            <p>Designing intuitive and user-centric interfaces that enhance user experiences while maintaining functionality and style.</p>
         </div>
 
         <!--Service-04-->
         <div>
             <img src="assets/images/desktop-app-dev.png" title="desktop app development" alt="png"> <br>
             <div>Desktop App Development</div> <br>
-            <p>We create responsive, user-friendly web sites with stunning designs and robust systems to meet your business needs.</p>
+            <p>Developing responsive and user-friendly desktop applications with modern designs and dependable systems for your business.</p>
         </div>
     </section>
 </main>
@@ -422,7 +450,7 @@
 
     <!--photo section-->
     <section>
-        <img src="assets/images/gallerypage-big-image.png" title="" alt="image">
+        <img src="assets/images/allerypage-big-image.png" title="" alt="image">
     </section>
 </main>
 
@@ -481,18 +509,20 @@
 
 
 <!--footer-->
-<footer>
-    <section>
-        <a href="">Home</a> <br>
-        <a href="">About Me</a> <br>
-        <a href="">Services</a> <br>
-        <a href="">Education</a> <br>
-        <a href="">Skills</a> <br>
-        <a href="">Assignments</a> <br>
-        <a href="">Contact</a> <br>
-    </section>
+<footer class="footer">
+    <nav>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Services</a>
+        <a href="">Education</a>
+        <a href="">Skills</a>
+        <a href="">Projects</a>
+        <a href="">Assignments</a>
+        <a href="">Gallery</a>
+        <a href="">Contact Me</a>
+    </nav>
 
-    <div>copyright © 2024 developed by Rukshan | All rights reserved</div>
+    <div id="footer-text">copyright © 2024 developed by Rukshan | All rights reserved</div>
 </footer>
 
 </body>

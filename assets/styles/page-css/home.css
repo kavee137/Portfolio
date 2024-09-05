@@ -1,0 +1,79 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: center; /* Centers the navigation bar within the header */
+}
+
+header>nav {
+    top: 10px;
+    height: 60px;
+    width: 1000px;
+    background-color: black;
+    border-radius: 50px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+header>nav>a {
+    color: white;
+    text-decoration: none;
+    padding: 20px 25px;
+    font-family: Inter, sans-serif;
+}
+
+
+
+
+
+/*home page*/
+.home-page {
+    height: 120vh;
+    width: 100vw;
+    min-height: 900px;
+    /*background-color: orangered;*/
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /*padding-bottom: 6rem;*/
+    /*padding-top: 150px;*/
+}
+
+#home-page-images {
+    height: 600px;
+    width: 100vw;
+    margin-top: 200px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    /*background-color: red;*/
+}
+
+#home-page-half-circle {
+    height: 433px;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+}
+
+#home-page-rukshanimage {
+    top: 0;
+    height: 600px;
+    position: absolute;
+}
+
+#home-page-clouds {
+    height: 90px;
+    width: 1000px;
+    bottom: 0;
+    position: absolute;
+}
