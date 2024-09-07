@@ -63,9 +63,8 @@
     align-items: center;
 
     margin: 20px;
-    width: 220px;
-    height: 260px;
-    /*border: 2px solid black;*/
+    width: 280px;
+    height: 320px;
 }
 
 .services-section>div>img {
@@ -86,7 +85,7 @@
     text-align: center;
     font-family: "Urbanist", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 500;
     font-style: normal;
     font-size: 15px;
     color: darkgray;

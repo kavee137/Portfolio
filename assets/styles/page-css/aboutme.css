@@ -17,6 +17,7 @@
     bottom: 0;
     margin: auto;
     height: 600px;
+    width: 1000px;
     position: absolute;
     /*background-color: aqua;*/
 }
@@ -51,7 +52,7 @@
     font-weight: 200;
     font-style: normal;
 
-    background-color: white;
+    /*background-color: white;*/
     color: darkgray;
 
     bottom: 20px;
