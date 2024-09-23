@@ -1,97 +1,98 @@
-.service-page {
-    height: 100vh;
-    width: 100vw;
-    min-height: 900px;
-    max-height: 1000px;
-    position: relative;
+@media all and (min-width: 1024px) {
+    .service-page {
+        height: 100vh;
+        width: 100vw;
+        min-height: 900px;
+        max-height: 1000px;
+        position: relative;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-    /*background-color: bisque;*/
+        /*background-color: bisque;*/
+    }
+
+    .service-topic-section {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: fit-content;
+        height: fit-content;
+        margin-bottom: 200px;
+
+        /*background-color: red;*/
+    }
+
+    .service-topic-section > label:first-child {
+        font-family: "Urbanist", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 60px;
+        margin-bottom: -20px;
+
+        /*background-color: green;*/
+    }
+
+    .service-topic-section > label:last-child {
+        font-family: "Urbanist", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+        bottom: 20px;
+        color: darkgray;
+
+        /*background-color: white;*/
+    }
+
+    .services-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-evenly;
+        height: fit-content;
+        width: fit-content;
+        margin-top: -100px;
+
+        /*background-color: hotpink;*/
+    }
+
+    .services-section > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin: 20px;
+        width: 280px;
+        height: 320px;
+    }
+
+    .services-section > div > img {
+        height: 70px;
+    }
+
+    .services-section > div > div {
+        font-family: "Yantramanav", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+
+        line-height: 1;
+        font-size: larger;
+        color: #000066;
+    }
+
+    .services-section > div > p {
+        text-align: center;
+        font-family: "Urbanist", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 15px;
+        color: darkgray;
+        margin: 0;
+    }
 }
-
-.service-topic-section {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: fit-content;
-    height: fit-content;
-    margin-bottom: 200px;
-
-    /*background-color: red;*/
-}
-
-.service-topic-section>label:first-child {
-    font-family: "Urbanist", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 60px;
-    margin-bottom: -20px;
-
-    /*background-color: green;*/
-}
-
-.service-topic-section>label:last-child {
-    font-family: "Urbanist", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-    bottom: 20px;
-    color: darkgray;
-
-    /*background-color: white;*/
-}
-
-.services-section {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: space-evenly;
-    height: fit-content;
-    width: fit-content;
-    margin-top: -100px;
-
-    /*background-color: hotpink;*/
-}
-
-.services-section>div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    margin: 20px;
-    width: 280px;
-    height: 320px;
-}
-
-.services-section>div>img {
-    height: 70px;
-}
-
-.services-section>div>div {
-    font-family: "Yantramanav", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-
-    line-height: 1;
-    font-size: larger;
-    color: #000066;
-}
-
-.services-section>div>p {
-    text-align: center;
-    font-family: "Urbanist", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 15px;
-    color: darkgray;
-    margin: 0;
-}
-
 
 
 

@@ -10,7 +10,14 @@
     <link rel="style sheet" href="assets/styles/normalize.css">
     <title>Portfolio - Kaveesha Rukshan</title>
 
-    <!--google font ubernist-->
+    <!--AOS library-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--animate.style library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+    <!--font Urbanist-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -18,8 +25,11 @@
     <!--font Vazirmatn-->
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
 
-    <!--Yantramanav-->
+    <!--font Yantramanav-->
     <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!--Kanit Static-->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!--css styles for pages-->
     <link rel="stylesheet" href="assets/styles/page-css/home.css">
@@ -46,6 +56,8 @@
         <a href="">Gallery</a>
         <a href="">Contact Me</a>
     </nav>
+
+    <label class="header-rukshan-text">RUKSHAN</label>
 </header>
 
 
@@ -174,7 +186,7 @@
 
         <section class="education-card-section">
             <!--education-01-->
-            <div>
+            <div data-aos="fade-left">
                 <img src="assets/images/ijse.png" title="Institute of Software Engineering" alt="png"> <br>
                 <div>
                     <label>Institute of Software Engineering</label> <br>
@@ -185,7 +197,7 @@
             </div>
 
             <!--education-02-->
-            <div>
+            <div data-aos="fade-right">
                 <img src="assets/images/national-youth-cops.png" title="National Youth Corps" alt="png"> <br>
                 <div>
                     <label>National Youth Corps</label> <br>
@@ -196,7 +208,7 @@
             </div>
 
             <!--education-03-->
-            <div>
+            <div data-aos="fade-left">
                 <img src="assets/images/school.png" title="Mihindu Central College(National College)" alt="png"> <br>
                 <div>
                     <label>Mihindu Central College</label> <br>
@@ -350,7 +362,7 @@
     <section>
         <!--project-01 RUKZ clothing POS system-->
         <div>
-            <img src="assets/images/rukz-pos-system.png" title="RUKZ clothing POS system" alt="image">
+            <img src="assets/images/rukz-ps-system.png" title="RUKZ clothing POS system" alt="image">
             <div>RUKZ clothing POS System</div>
             <p>The system efficiently manages custom clothing orders and
                 streamlines the rental process for blazers and trousers. Key
@@ -364,7 +376,7 @@
 
         <!--project-02 Simple get together management system-->
         <div>
-            <img src="assets/images/zuanshi-get-together-management-system.png" title="Management System" alt="image">
+            <img src="assets/images/uanshi-get-together-management-system.png" title="Management System" alt="image">
             <div>“ZUANSHI” Simple Get Together Management System</div>
             <p>The system efficiently manages students, tracks their
                 attendance, and streamlines the payment process for
@@ -534,20 +546,29 @@
 
 <!--footer-->
 <footer class="footer">
-    <nav>
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Services</a>
-        <a href="">Education</a>
-        <a href="">Skills</a>
-        <a href="">Projects</a>
-        <a href="">Assignments</a>
-        <a href="">Gallery</a>
-        <a href="">Contact Me</a>
-    </nav>
+<!--    <nav>-->
+<!--        <a href="">Home</a>-->
+<!--        <a href="">About</a>-->
+<!--        <a href="">Services</a>-->
+<!--        <a href="">Education</a>-->
+<!--        <a href="">Skills</a>-->
+<!--        <a href="">Projects</a>-->
+<!--        <a href="">Assignments</a>-->
+<!--        <a href="">Gallery</a>-->
+<!--        <a href="">Contact Me</a>-->
+<!--    </nav>-->
 
     <div id="footer-text">copyright © 2024 developed by Rukshan | All rights reserved</div>
 </footer>
+
+
+<!--AOS library-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+
 
 </body>
 </html>
