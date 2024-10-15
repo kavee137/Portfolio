@@ -1,113 +1,100 @@
-@media all and (min-width: 1024px) {
-    .service-page {
-        height: 100vh;
-        width: 100vw;
-        min-height: 900px;
-        max-height: 1000px;
-        position: relative;
+.service-page {
+    margin-top: 100px;
+}
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+.services-section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 100px;
+}
 
-        /*background-color: bisque;*/
-    }
+.services-card {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 290px;
+    margin: 32px;
 
-    .service-topic-section {
+    font-family: "Yantramanav", sans-serif;
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: fit-content;
-        height: fit-content;
-        margin-bottom: 200px;
+    font-style: normal;
+}
+.services-card img {
+    width: 6vw;
+}
+.services-card div {
+    font-size: 1.7vw;
+    font-weight: 900;
+}
+.services-card p {
+    color: #7C7C7C;
+    font-size: 1.2vw;
+}
 
-        /*background-color: red;*/
-    }
-
-    .service-topic-section > label:first-child {
-        font-family: "Urbanist", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 600;
-        font-style: normal;
-        font-size: 60px;
-        margin-bottom: -20px;
-
-        /*background-color: green;*/
-    }
-
-    .service-topic-section > label:last-child {
-        font-family: "Urbanist", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 200;
-        font-style: normal;
-        bottom: 20px;
-        color: darkgray;
-
-        /*background-color: white;*/
-    }
-
+/* Tablet (max-width: 768px) */
+@media all and (max-width: 768px) {
     .services-section {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: space-evenly;
-        height: fit-content;
-        width: fit-content;
-        margin-top: -100px;
-
-        /*background-color: hotpink;*/
+        margin-top: 100px;
+        padding: 0;
+    }
+    .services-card {
+        min-width: 250px;
+    }
+    .services-card img {
+        width: 50px;
+    }
+    .services-card div {
+        font-size: 20px;
+    }
+    .services-card p {
+        color: #7C7C7C;
+        font-size: 14px;
     }
 
-    .services-section > div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+}
 
+/* Mobile (max-width: 480px) */
+@media all and (max-width: 480px) {
+    .services-section {
+        margin-top: 100px;
+        padding: 0;
+    }
+    .services-card {
+        min-width: 210px;
         margin: 20px;
-        width: 280px;
-        height: 320px;
     }
-
-    .services-section > div > img {
-        height: 70px;
+    .services-card img {
+        width: 50px;
     }
-
-    .services-section > div > div {
-        font-family: "Yantramanav", sans-serif;
-        font-weight: 900;
-        font-style: normal;
-
-        line-height: 1;
-        font-size: larger;
-        color: #000066;
+    .services-card div {
+        font-size: 20px;
     }
-
-    .services-section > div > p {
-        text-align: center;
-        font-family: "Urbanist", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 500;
-        font-style: normal;
-        font-size: 15px;
-        color: darkgray;
-        margin: 0;
+    .services-card p {
+        color: #7C7C7C;
+        font-size: 14px;
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Laptop  (min-width: 769px) and (max-width: 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .services-section {
+        margin-top: 100px;
+        padding: 0;
+    }
+    .services-card {
+        min-width: 250px;
+    }
+    .services-card img {
+        width: 50px;
+    }
+    .services-card div {
+        font-size: 20px;
+    }
+    .services-card p {
+        color: #7C7C7C;
+        font-size: 14px;
+    }
+}
