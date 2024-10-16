@@ -34,15 +34,68 @@
     height: 100%;
 }
 
-.assignment-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
-    background: url("/assets/images/test123.jpg");
-    /*background-color: red;*/
+/*.assignment-card:hover {*/
+/*    transform: scale(1.05);*/
+/*    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);*/
+/*    !*background: url("/assets/images/test123.jpg");*!*/
+/*    !*background-color: red;*!*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    background-repeat: no-repeat;*/
+/*}*/
+
+.ass-card-01:hover {
+    background: url("/assets/images/ass-case-01.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.05);
 }
+.ass-card-02:hover {
+    background: url("/assets/images/ass-case-02.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.05);
+}
+.ass-card-03:hover {
+    background: url("/assets/images/ass-case-03.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.05);
+}
+.ass-card-04:hover {
+    background: url("/assets/images/ass-case-04.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.05);
+}
+.ass-card-05:hover {
+    background: url("/assets/images/ass-case-05.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.05);
+}
+.ass-card-06:hover {
+    background: url("/assets/images/ass-case-06.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+
+
 
 .assignment-card-content {
     position: absolute;
@@ -95,7 +148,7 @@
 .card__button {
     padding: 10px 20px;
     border-radius: 8px;
-    background: deepskyblue;
+    background: #10b981;
     border: none;
     color: white;
     cursor: pointer;
