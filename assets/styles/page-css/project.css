@@ -255,10 +255,6 @@ ul {
 
 /* Tablet (max-width: 768px) */
 @media all and (max-width: 768px) {
-    .project-page {
-        margin-top: 100px;
-    }
-
     .project-main-content-section {
         margin-top: 50px;
     }

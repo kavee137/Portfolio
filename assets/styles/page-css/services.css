@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 100px;
+    padding: 100px 100px 0 100px;
 }
 
 .services-card {

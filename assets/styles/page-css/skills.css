@@ -81,12 +81,18 @@
     color: #7B7B7B;
 }
 
+/* Tablet (max-width: 768px) */
+@media all and (max-width: 768px) {
+    .skill-page {
+        margin-top: 200px;
+    }
+}
 
 /* Mobile (max-width: 480px) */
 @media all and (max-width: 480px) {
 
     .skill-page {
-        margin-top: 100px;
+        margin-top: 200px;
     }
     .skill-card {
         max-width: 270px;
