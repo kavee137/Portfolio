@@ -341,7 +341,9 @@
     }
 
     #about-detail-section p {
-        font-size: 1.7vw;
+        margin: 10px 20px 0 20px;
+        font-family: "Vazirmatn", sans-serif;
+        line-height: 19px;
     }
 
     .page-topic {
