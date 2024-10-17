@@ -58,34 +58,34 @@
     </div>
     <!-- Desktop navigation bar -->
     <nav>
-        <a class="upper-navigation" href="">Home</a>
-        <a class="upper-navigation" href="">About</a>
-        <a class="upper-navigation" href="">Services</a>
-        <a class="upper-navigation" href="">Education</a>
-        <a class="upper-navigation" href="">Skills</a>
-        <a class="upper-navigation" href="">Projects</a>
-        <a class="upper-navigation" href="">Assignments</a>
-        <a class="upper-navigation" href="">Gallery</a>
-        <a class="upper-navigation" href="">Contact Me</a>
+        <a class="upper-navigation" href="#home-page">Home</a>
+        <a class="upper-navigation" href="#about-page">About</a>
+        <a class="upper-navigation" href="#services-page">Services</a>
+        <a class="upper-navigation" href="#project-page">Projects</a>
+        <a class="upper-navigation" href="#education-page">Education</a>
+        <a class="upper-navigation" href="#skills-page">Skills</a>
+        <a class="upper-navigation" href="#assignments-page">Assignments</a>
+<!--        <a class="upper-navigation" href="#">Gallery</a>-->
+        <a class="upper-navigation" href="#contact-me-page">Contact Me</a>
     </nav>
     <!-- Sidebar navigation for mobile/tablet -->
     <div id="sidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">&times;</a>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Education</a>
-        <a href="#">Skills</a>
-        <a href="#">Projects</a>
-        <a href="#">Assignments</a>
-        <a href="#">Gallery</a>
-        <a href="#">Contact Me</a>
+        <a href="#home-page">Home</a>
+        <a href="#about-page">About</a>
+        <a href="#services-page">Services</a>
+        <a href="#project-page">Projects</a>
+        <a href="#education-page">Education</a>
+        <a href="#skills-page">Skills</a>
+        <a href="#assignments-page">Assignments</a>
+<!--        <a href="#">Gallery</a>-->
+        <a href="#contact-me-page">Contact Me</a>
     </div>
 </header>
 
 
 <!--home page-->
-<main class="home-page">
+<main class="home-page" id="home-page">
     <!--content section-->
     <div class="home-item">
         <div id="home-page-first-name">I'm Rukshan</div>
@@ -104,7 +104,7 @@
 </main>
 
 <!--about me page-->
-<main class="about-me-page">
+<main class="about-me-page" id="about-page">
 
     <!--main content section-->
     <section class="about-main-content-section">
@@ -187,7 +187,7 @@
 </main>
 
 <!--services page-->
-<main class="service-page">
+<main class="service-page" id="services-page">
 
     <!--topic section-->
     <section class="topic-section">
@@ -235,7 +235,7 @@
 </main>
 
 <!--Project page-->
-<main class="project-page">
+<main class="project-page" id="project-page">
     <!--topic section-->
     <section class="topic-section">
         <div data-aos="fade-up" class="page-topic">Project</div>
@@ -320,7 +320,7 @@
 </main>
 
 <!--Education page-->
-<main class="education-page">
+<main class="education-page" id="education-page">
 
     <!--topic section-->
     <section class="topic-section">
@@ -382,7 +382,7 @@
 </main>
 
 <!--Skills page-->
-<main class="skill-page">
+<main class="skill-page" id="skills-page">
 
     <!--topic section-->
     <section class="topic-section">
@@ -540,7 +540,7 @@
 </main>
 
 <!--assignments page-->
-<main class="assignment-page">
+<main class="assignment-page" id="assignments-page">
     <!--topic section-->
     <section class="topic-section">
         <div data-aos="fade-up" class="page-topic">Assignments</div>
@@ -686,7 +686,7 @@
 
 
 <!--contact me page-->
-<main class="contact-me-page">
+<main class="contact-me-page" id="contact-me-page">
     <!--topic section-->
     <section class="topic-section">
         <div data-aos="fade-up" class="page-topic">Contact Me</div>
@@ -817,33 +817,36 @@
 
 <!--Upper navigation clicked button color change-->
 <script>
+    // Select all main sections
+    const sections = document.querySelectorAll('main');
     // Select all navigation links
     const navLinks = document.querySelectorAll('.upper-navigation');
 
-    // Loop through each link and add click event listener
-    navLinks.forEach(link => {
-        link.addEventListener('click', function(event) {
-            // Prevent default link behavior if necessary
-            event.preventDefault();
+    // Function to highlight the active navigation link
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id'); // Get the section ID
+            const navLink = document.querySelector(`a[href="#${id}"]`);
 
-            // Remove active class from all links
-            navLinks.forEach(link => {
-                link.style.border = ""; // Clear border
-                link.style.fontWeight = ""; // Clear font weight
-                link.style.textDecoration = ""; // Clear underline
-                link.style.backgroundColor = ""; // Clear background color
-                link.style.color = ""; // Clear text color
-            });
-
-            // Add new style to the clicked link
-            // this.style.border = "white solid 2px";
-            this.style.fontWeight = "bold";
-            // this.style.textDecoration = "underline";
-            this.style.backgroundColor = "white"; // Optional background color
-            this.style.color = "black"; // Optional text color
+            if (entry.isIntersecting) {
+                // Add the active class to the current link
+                navLink.classList.add('active-link');
+            } else {
+                // Remove the active class if the section is not in view
+                navLink.classList.remove('active-link');
+            }
         });
+    }, {
+        threshold: 0.5 // This defines how much of the section needs to be visible
+    });
+
+    // Observe each section
+    sections.forEach(section => {
+        observer.observe(section);
     });
 </script>
+
+
 
 
 </body>

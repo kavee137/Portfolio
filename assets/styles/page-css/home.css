@@ -244,6 +244,39 @@ nav a {
 
 
 
+/* Default styles for navigation links */
+.upper-navigation {
+    font-weight: normal;
+    background-color: transparent;
+    color: white;
+}
+
+/* Active link styles */
+.upper-navigation.active-link {
+    font-weight: bold;
+    background-color: white;
+    color: black;
+}
+
+/* Hover effects */
+.upper-navigation:hover {
+    border: white solid 1px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Active link styles when clicked */
+.upper-navigation:active {
+    border: white solid 2px;
+    background-color: gray; /* Change background when clicked */
+    font-weight: bold;
+    text-decoration: underline;
+    color: #ff0; /* Optional: Change text color when clicked */
+}
+
+
+
+
 
 
 /* Tablet (max-width: 768px) */
@@ -437,27 +470,23 @@ nav a {
 
 /* 4K Displays (min-width: 1441px) */
 @media (min-width: 1441px) {
-
-
-
-
     header {
         display: flex;
         justify-content: center;
     }
 
     nav {
-        width: 60%;
+        width: 80vw;
+        height: 4vw
     }
 
     nav a {
         color: white;
         text-decoration: none;
-        padding: 1rem 0.6rem; /* Slightly reduce padding for better responsiveness */
-        font-family: 'Inter', sans-serif;
-        font-size: 0.89rem; /* Make font size flexible */
-        width: 10rem;
-        height: 0.9rem;
+        padding: 1vw 0.6rem; /* Slightly reduce padding for better responsiveness */
+        font-size: 1vw; /* Make font size flexible */
+        width: 9vw;
+        height: 1vw;
         border-radius: 50px;
         text-align: center;
     }
@@ -465,7 +494,7 @@ nav a {
 
 
     .home-page {
-        margin-top: 70px;
+        margin-top: 200px;
     }
 
     .home-item {
@@ -557,21 +586,5 @@ nav a {
     }
 }
 
-
-/*upper navigation bar animation*/
-.upper-navigation:hover {
-    border: white solid 1px;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-
-.upper-navigation:active {
-    border: white solid 2px;
-    background-color: gray; /* Change background when clicked */
-    font-weight: bold;
-    text-decoration: underline;
-    color: #ff0; /* Optional: Change text color when clicked */
-}
 
 
