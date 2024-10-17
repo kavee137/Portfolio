@@ -173,6 +173,7 @@
     .contact-me-input-field {
         height: 10vw;
         width: 80vw;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
         /*padding: 0 0 0 0.7vw;*/
         /*font-size: 1vw;*/
     }
@@ -190,12 +191,13 @@
 
     .contact-me-name-input-field {
         width: 80vw;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
     }
 
     .contact-me-textarea-field {
         width: 77vw;
         height: 44vw;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
     }
 
     .contact-me-submit-button {
