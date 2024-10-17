@@ -289,8 +289,8 @@
     }
 
     #about-detail-section {
-        margin-left: 150px;
-        width: 50vw;
+        margin-left: 100px;
+        width: 30vw;
         margin-right: 100px;
     }
 
@@ -307,9 +307,15 @@
         width: 50px;
     }
 
-    #about-image, #about-rukshan-img {
-        height: 26vw;
-        margin-left: 60px;
+    #about-image {
+        height: 200px;
+        /*margin-left: 60px;*/
+        margin: 0;
+    }
+
+    #about-rukshan-img {
+        height: 22vw;
+        margin-left: 200px;
     }
 }
 
