@@ -267,7 +267,9 @@
     }
 
     #about-detail-section p {
-        margin: 0 20px 0 20px;
+        margin: 10px 20px 0 20px;
+        font-family: "Vazirmatn", sans-serif;
+        line-height: 19px;
     }
 
     #about-image, #about-rukshan-img {
@@ -341,9 +343,7 @@
     }
 
     #about-detail-section p {
-        margin: 10px 20px 0 20px;
-        font-family: "Vazirmatn", sans-serif;
-        line-height: 19px;
+        font-size: 1.7vw;
     }
 
     .page-topic {
