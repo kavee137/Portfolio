@@ -223,6 +223,7 @@ nav a {
     width: 768px;
     margin-top: 120px;
     align-items: center;
+    z-index: 1;
     /*background-color: red;*/
 }
 #home-page-half-circle {

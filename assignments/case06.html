@@ -40,14 +40,27 @@
     height: 250px;
     position: absolute;
     bottom: 300px;
+    animation-name: city;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background-repeat: repeat-x;
+    animation-duration: 2s;
   }
 
   #road {
     background: url("../assets/assignment-resources/Car_Animation_Img/road.jpg");
     bottom: 0;
     height: 300px;
-    width: 100%;
+    width: 500%;
     position: absolute;
+
+    animation-name: animy;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background-repeat: repeat-x;
+    animation-duration: 5s;
+    display: block;
+
   }
 
   #car {
@@ -79,6 +92,10 @@
     right: 260px;
     margin: auto;
     position: absolute;
+    animation-name: wheel;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
   }
 
   #wheel2 {
@@ -94,8 +111,42 @@
     right: 0;
     margin: auto;
     position: absolute;
+    animation-name: wheel;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
   }
 
+  @keyframes wheel {
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes car {
+    100%{
+      transform: translateY(-1px);
+    }
+    50%{
+      transform: translateY(1px);
+    }
+    100%{
+      transform: translateY(-1px);
+    }
+  }
+
+
+  @keyframes city {
+    100%{
+      transform: translateX(-1200px);
+    }
+  }
+
+  @keyframes animy {
+    100%{
+      transform: translateX(-3400px);
+    }
+  }
 
 </style>
 <body>

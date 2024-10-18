@@ -142,7 +142,7 @@
                 </div>
 
                 <!--social media-->
-                <div class="about-social-section">
+                <div data-aos="fade-up" class="about-social-section">
 
                     <a data-aos="fade-up" data-social="linkedin" aria-label="LinkedIn" href=https://www.linkedin.com/in/kaveesha-rukshan-977354297 target="_blank">
                         <img src="assets/images/linkedIn-logo.png" title="linkedIn profile" alt="linkedin logo">
@@ -165,13 +165,13 @@
                 <div data-aos="fade-up" class="about-buttons">
                     <div>
                         <button class="button-cv">
-                            <span>Download CV</span>
+                            <span data-aos="fade-up">Download CV</span>
                         </button>
                     </div>
 
                     <div>
                         <a href="#contact-me-page">
-                            <button type="submit" class="custom-button">
+                            <button data-aos="fade-up" type="submit" class="custom-button">
                                 Hire me
                                 <svg class="custom-svg" viewBox="0 0 16 19" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -556,7 +556,7 @@
            <div class="assignment-card ass-card-01">
                <div class="assignment-card-content">
                    <p data-aos="fade-up" class="assignment-card-title">Case 01</p>
-                   <p data-aos="fade-up" class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                   <p data-aos="fade-up" class="card__description">In this project, I created a responsive interactive menu using only HTML and CSS, with hover animations that smoothly reveal icons and text for enhanced visual appeal and user interaction.</p>
                </div>
                <div class="card__buttons">
                    <a data-aos="fade-up" href="assignments/case01.html" target="_blank">
@@ -571,7 +571,7 @@
            <div class="assignment-card ass-card-02">
                <div class="assignment-card-content">
                    <p data-aos="fade-up" class="assignment-card-title">Case 02</p>
-                   <p data-aos="fade-up" class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                   <p data-aos="fade-up" class="card__description">This project features a circular element with a hover-triggered animation. Upon hovering, a red line rotates smoothly around the circle, creating a dynamic visual effect.</p>
                </div>
                <div class="card__buttons">
                    <a data-aos="fade-up" href="assignments/02-case.html" target="_blank">
@@ -687,7 +687,6 @@
 <!--</main>-->
 
 
-
 <!--contact me page-->
 <main class="contact-me-page" id="contact-me-page">
     <!--topic section-->
@@ -695,7 +694,6 @@
         <div data-aos="fade-up" class="page-topic">Contact Me</div>
         <div data-aos="fade-up" class="page-sub-topic">Get in Touch</div>
     </section>
-
 
     <!--Contact me main content section-->
     <section class="contact-me-main-content-section">
@@ -744,27 +742,27 @@
         <!--column 02-->
         <section class="contact-me-row column-02">
             <!-- Contact form -->
-            <form class="contact-me-form">
+            <form class="contact-me-form" id="contactForm">
                 <div class="input-row">
                     <label>
-                        <input data-aos="fade-up" class="contact-me-name-input-field" type="text" placeholder="First Name">
+                        <input data-aos="fade-up" class="contact-me-name-input-field" type="text" id="firstNameInput" placeholder="First Name" required>
                     </label>
                     <label>
-                        <input data-aos="fade-up" class="contact-me-name-input-field" type="text" placeholder="Last Name">
+                        <input data-aos="fade-up" class="contact-me-name-input-field" type="text" id="lastNameInput" placeholder="Last Name" required>
                     </label>
                 </div>
                 <div>
                     <label>
-                        <input data-aos="fade-up" class="contact-me-input-field" type="email" placeholder="Email">
+                        <input data-aos="fade-up" class="contact-me-input-field" type="email" id="emailInput" placeholder="Email" required>
                     </label>
                 </div>
                 <div>
                     <label>
-                        <textarea data-aos="fade-up" class="contact-me-textarea-field" placeholder="Enter your message"></textarea>
+                        <textarea data-aos="fade-up" class="contact-me-textarea-field" id="messageInput" placeholder="Enter your message" required></textarea>
                     </label>
                 </div>
                 <div>
-                    <button data-aos="fade-up" class="contact-me-submit-button">Send message</button>
+                    <button data-aos="fade-up" class="contact-me-submit-button" type="submit">Send message</button>
                 </div>
             </form>
         </section>
@@ -772,10 +770,8 @@
     </section>
 
     <!--name text-->
-    <section class="contact-me-name">RUKSHAN</section>
+    <section data-aos="fade-up" class="contact-me-name">RUKSHAN</section>
 </main>
-
-
 
 <!--footer-->
 <footer class="footer">
@@ -798,6 +794,32 @@
 
 
 
+<!--Contact me form email sender-->
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Retrieve the form values
+        const firstName = document.getElementById("firstNameInput").value;
+        const lastName = document.getElementById("lastNameInput").value;
+        const email = document.getElementById("emailInput").value;
+        const message = document.getElementById("messageInput").value;
+
+        // Compose the email body
+        const emailBody = `Hello Kaveesha, %0D%0A%0D%0AYou have received a new message from your portfolio contact form. Here are the details:%0D%0A%0D%0A` +
+            `First Name: ${firstName}%0D%0A` +
+            `Last Name: ${lastName}%0D%0A` +
+            `Email: ${email}%0D%0A%0D%0A` +
+            `Message:%0D%0A%0D%0A ${message}%0D%0A%0D%0A`;
+
+        // Open the user's email client with the pre-filled email
+        const mailtoLink = `mailto:kaveesharukshan137@gmail.com?subject=New%20Message%20from%20${firstName}%20${lastName}&body=${emailBody}`;
+        window.location.href = mailtoLink;
+
+        // Clear the form fields after sending the email
+        document.getElementById("contactForm").reset();
+    });
+</script>
 
 <!--tablet and mobile navigation bar-->
 <script>
@@ -810,12 +832,6 @@
         }
     }
 
-</script>
-
-<!--AOS library-->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
 </script>
 
 <!--Upper navigation clicked button color change-->
@@ -849,6 +865,11 @@
     });
 </script>
 
+<!--AOS library-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 
 
