@@ -1,0 +1,51 @@
+body {
+    background-color: black;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+button {
+    border-radius: 100%;
+    margin: 3px 0 3px 0;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    background-color: #495057;
+    font-size: 25px;
+    font-weight: 300;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+#button-0 {
+    width: 125px;
+    border-radius: 50px;
+}
+
+.color-orange {
+    background-color: darkorange;
+}
+
+.color-light-gray {
+    background-color: lightgray;
+    color: black;
+}
+
+.display-area {
+    width: 235px;
+    height: 56px;
+    margin: 0 0 5px;
+    padding: 7px;
+    background-color: black;
+    color: white;
+    text-align: right;
+    font-size: 53px;
+    font-family: sans-serif;
+    font-weight: 100;
+}

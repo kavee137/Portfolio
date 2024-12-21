@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment-09</title>
+  <style>
+
+    body {
+      display: flex;
+      align-content: center;
+      flex-direction: column;
+      align-items: center;
+      background-color: black;
+    }
+    main {
+      margin-top: 40vh;
+      display: flex;
+      background-color: black;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    div {
+      height: 10px;
+      width: 100px;
+      background-color: white;
+      border: 2px solid black;
+    }
+
+    .main-section-01 {
+      display: flex;
+      margin-bottom: 100px;
+      align-items: center;
+      width: 500px;
+      justify-content: space-around;
+      flex-direction: row;
+    }
+    .main-section-02 {
+      display: flex;
+    }
+
+    button {
+      height: 4vw;
+      width: 9vw;
+    }
+
+    .left-border-radius {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+
+    .right-border-radius {
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+
+  </style>
+
+
+
+</head>
+<body>
+
+<main>
+  <section class="main-section-01">
+    <div class="light left-border-radius" id="b1"></div>
+    <div class="light" id="b2"></div>
+    <div class="light" id="b3"></div>
+    <div class="light" id="b4"></div>
+    <div class="light" id="b5"></div>
+    <div class="light right-border-radius" id="b6"></div>
+  </section>
+
+  <section class="main-section-02">
+
+      <button id="start_btn">Start</button>
+      <button id="stop_btn">Stop</button>
+
+  </section>
+</main>
+
+
+<!--jquery-->
+<script src="../assets/lib/jquery-3.7.1.min.js"></script>
+
+
+<script>
+
+  const light_count = 6;
+  let current_light = -1;
+  let direction = "RIGHT"; // "RIGHT", "LEFT"
+  let interval = null;
+
+  updateLight = () => {
+    if(direction==="RIGHT") {
+
+      current_light++;
+
+      $(".light").css("background", "white");
+      $(".light").eq(current_light).css("background", "#ff0000");
+      $(".light").eq(current_light-1).css("background", "#e35053");
+      $(".light").eq(current_light-2).css("background", "#ec8385");
+
+      if (current_light==light_count-1) {
+        direction="LEFT";
+      }
+
+    } else {
+      current_light--;
+
+      $(".light").css("background", "white");
+      $(".light").eq(current_light).css("background", "#ff0000");
+      $(".light").eq(current_light+1).css("background", "#e35053");
+      $(".light").eq(current_light+2).css("background", "#ec8385");
+
+      if (current_light==0) {
+        direction="RIGHT";
+      }
+    }
+  }
+
+  $('#start_btn').on('click', function () {
+    interval = setInterval(updateLight, 120);
+  });
+
+  $('#stop_btn').on('click', function () {
+    clearInterval(interval)
+  });
+</script>
+</body>
+</html>
