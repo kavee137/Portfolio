@@ -126,6 +126,11 @@
 
 
 /*Hire me button*/
+
+#home-page-contact-me-button {
+    text-decoration: none;
+}
+
 .custom-button {
     display: flex;
     justify-content: center;
@@ -144,6 +149,7 @@
     overflow: hidden;
     transition: color 0.7s ease;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .custom-button::before {
