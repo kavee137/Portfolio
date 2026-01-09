@@ -1,0 +1,65 @@
+.category-section {
+    background-color: #f4f4f4;
+}
+
+.category-list::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Edge */
+}
+
+.category-list-img {
+    width: 40px;
+    border-radius: 100px;
+}
+
+.category-list {
+    display: flex;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    gap: 1rem; /* Adds space between items */
+    padding: 1rem;
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+.category-item {
+    flex: 0 0 auto; /* Prevent items from shrinking */
+    text-align: center;
+    width: 220px; /* Adjust width as needed */
+}
+.category-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+.category-item p {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+
+/* Main Section */
+.design-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*height: 100vh; !* Full viewport height *!*/
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.design-section-img-div {
+    max-width: 90%; /* Ensure it doesn't exceed the viewport width */
+    max-height: 80vh; /* Prevent the image from overflowing vertically */
+    overflow: hidden; /* Hide any overflow from the image */
+    border-radius: 10px; /* Add smooth rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.design-section-img-div img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: cover; /* Ensure it fills the container nicely */
+    border-radius: inherit; /* Match the parent’s rounded corners */
+}

@@ -1,0 +1,41 @@
+.ipad-section {
+    margin-top: 60px;
+}
+
+.ipad-video {
+    position: relative;
+    width: 100vw;
+    height: 70vh;
+    object-fit: cover; /* Ensures the video covers the entire area */
+    /*z-index: -1; !* Keeps the video behind the content *!*/
+
+    /* Apply filters for sharpening and darkening */
+    /*filter: contrast(1.2) brightness(0.3); !* Adjust contrast and brightness *!*/
+}
+
+.ipad-lineup-section {
+    display: flex;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    gap: 1rem; /* Adds space between items */
+    padding: 1rem;
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+.ipad-item {
+    /*background-color: red;*/
+    margin-right: 50px;
+    flex: 0 0 auto; /* Prevent items from shrinking */
+    text-align: center;
+    width: 220px; /* Adjust width as needed */
+    max-width: 208px;
+
+}
+
+.ipad-lineup-section::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Edge */
+}
+
+.ipad-item img {
+    width: 220px;
+    height: auto;
+    border-radius: 10px; /* Optional: Rounded corners */
+}
